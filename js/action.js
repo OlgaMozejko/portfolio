@@ -1,3 +1,12 @@
+function stupid() {
+  window.scrollTo(0, 0);
+};
+
+function openTab(url) {
+window.open(url, "_blank")};
+
+
+
 //fireflies demo by Michal @Mertl
 // https://codepen.io/Mertl/pen/GexapP
 

@@ -958,7 +958,7 @@ nav a {
 .foottext {
   width: 100%;
   font-size: 2rem;
-  margin-left: 3rem;
+
 }
 
 .iconfoot {
@@ -1043,6 +1043,13 @@ nav a {
   margin-left: 2rem;
 }
 
+.buttonabout:hover .BorderTopBottom:before,
+.buttonabout:hover .BorderTopBottom:after {
+  width: 270px;
+  transition: all 0.5s ease;
+}
+
+
 .textbox2 {
   margin-right: 4rem;
 }
@@ -1072,6 +1079,18 @@ nav a {
   margin-top: 2rem;
 }
 
+.projects1:hover .BorderToptoBot:before,
+.projects1:hover .BorderToptoBot:after {
+  width: 20.8rem;
+  transition: all 0.5s ease;
+}
+
+.projects1:hover .BorderLetoRi:before,
+.projects1:hover .BorderLetoRi:after {
+  height: 12.6rem;
+  transition: all 0.5s ease;
+}
+
 .projects2 {
   width: 20rem;
   height: 12rem;
@@ -1079,6 +1098,18 @@ nav a {
   align-content: center;
   margin: 0 auto;
   margin-bottom: 5rem;
+}
+
+.projects2:hover .BorderToptoBot2:before,
+.projects2:hover .BorderToptoBot2:after {
+  width: 20.8rem;
+  transition: all 0.5s ease;
+}
+
+.projects2:hover .BorderLetoRi2:before,
+.projects2:hover .BorderLetoRi2:after {
+  height: 12.6rem;
+  transition: all 0.5s ease;
 }
 
 .proinnertext {
@@ -1137,6 +1168,22 @@ nav a {
   padding-top: -5rem;
 }
 
+
+.shape3 {
+  margin-top: -90px;
+}
+
+.shape4 {
+  margin-top: -90px;
+  margin-left: 30px;
+}
+
+.shape6 {
+  height: 70px;
+}
+
+
+
 .ovid {
   width: 400px;
   margin-left: 1rem;
@@ -1187,6 +1234,12 @@ nav a {
   font-size: 3.5rem;
 }
 
+.probutton:hover .BorderT:before,
+.probutton:hover .BorderT:after {
+  width: 19.6rem;
+  transition: all 0.5s ease;
+}
+
 
 }
 
@@ -1212,7 +1265,6 @@ nav a {
   .foot {
     width: 100%;
     font-size: 1rem;
-    margin-left: 2rem;
   }
   
   .minilogo {
@@ -1225,7 +1277,6 @@ nav a {
   
   .foottext {
     font-size: 2rem;
-    margin-left: 2rem;
   }
   
   .iconfoot {
@@ -1261,6 +1312,7 @@ nav a {
   
   .facephoto {
     width: 70%;
+    margin-right: 5rem;
   }
   
   .facephoto2 {
@@ -1466,6 +1518,44 @@ nav a {
   .shape6 {
     height: 5rem;
   }
+
+  .projects2:hover .BorderToptoBot2:before,
+.projects2:hover .BorderToptoBot2:after {
+  width: 20.8rem;
+  transition: all 0.5s ease;
+}
+
+.projects2:hover .BorderLetoRi2:before,
+.projects2:hover .BorderLetoRi2:after {
+  height: 12.6rem;
+  transition: all 0.5s ease;
+}
+
+.projects1:hover .BorderToptoBot:before,
+.projects1:hover .BorderToptoBot:after {
+  width: 20.8rem;
+  transition: all 0.5s ease;
+}
+
+.projects1:hover .BorderLetoRi:before,
+.projects1:hover .BorderLetoRi:after {
+  height: 12.6rem;
+  transition: all 0.5s ease;
+}
+
+
+.buttonabout:hover .BorderTopBottom:before,
+.buttonabout:hover .BorderTopBottom:after {
+  width: 275px;
+  transition: all 0.5s ease;
+}
+
+.probutton:hover .BorderT:before,
+.probutton:hover .BorderT:after {
+  width: 19.6rem;
+  transition: all 0.5s ease;
+}
+
 
   
 
