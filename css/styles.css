@@ -199,7 +199,7 @@ nav a:hover {
 /*--------------*/
 
 .facephoto {
-  width: 70%;
+  width: 400px;
 }
 
 .flexing {
@@ -622,6 +622,9 @@ padding-bottom: 4rem;
  text-align: right;
 }
 
+.facephoto3 {
+  width: 340px;
+}
 
 .abouttext {
   width: 30rem;
@@ -1241,6 +1244,39 @@ nav a {
 }
 
 
+ 
+.shape1 {
+  display: none;
+}
+
+.shape2 {
+  display: none;
+}
+
+.shape3 {
+  display: none;
+}
+
+.shape4 {
+  display: none;
+}
+
+.shape5 {
+  display: none;
+}
+
+.shape6 {
+  display: none;
+}
+
+.shape7 {
+  display: none;
+}
+
+.shape8 {
+  display: none;
+}
+
 }
 
 
@@ -1507,17 +1543,39 @@ nav a {
     font-size: 3.5rem;
   }
   
+  .shape1 {
+    display: none;
+  }
+
+  .shape2 {
+    display: none;
+  }
+
   .shape3 {
-    margin-bottom: 3rem;
+    display: none;
   }
 
   .shape4 {
-    margin-bottom: 3rem;
+    display: none;
+  }
+
+  .shape5 {
+    display: none;
   }
 
   .shape6 {
-    height: 5rem;
+    display: none;
   }
+
+  .shape7 {
+    display: none;
+  }
+
+  .shape8 {
+    display: none;
+  }
+
+
 
   .projects2:hover .BorderToptoBot2:before,
 .projects2:hover .BorderToptoBot2:after {
