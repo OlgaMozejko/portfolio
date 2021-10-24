@@ -230,18 +230,15 @@ nav a:hover {
   margin-left: -7rem;
 }
 
-.smolbox {
-  width: 24rem;
-  height: 2rem;
-  background-color: var(--detail);
-  position: absolute;
-  margin-top: -2px;
-}
 
 .myname {
   position: relative;
   margin-top: -4rem;
   margin-bottom: -0.1rem;
+  background-image: url(../img/bg.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 /*----------------*/
@@ -699,6 +696,8 @@ padding-bottom: 4rem;
 /*-------------porjects pages---------------*/
 
 
+
+
 .vidflex {
   display: flex;
   flex-direction: row;
@@ -731,23 +730,28 @@ padding-bottom: 4rem;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   margin-bottom: 4rem;
 }
 
 .titlep {
   margin-bottom: -60px;
   position: relative;
+  background-image: url(../img/bg.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-.shape2 {
-  width: 160px;
-  height: 60px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-top: -90px;
-  margin-left: 100px;
+.titlep5 {
+  margin-bottom: -60px;
+  position: relative;
+  background-image: url(../img/bg.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: top;
 }
+
 
 .projectflex {
   display: flex;
@@ -876,56 +880,7 @@ padding-bottom: 4rem;
   transition: all 0.5s ease;
 }
 
-.shape3 {
-  width: 160px;
-  height: 60px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-left: 200px;
-}
 
-.shape4 {
-  width: 300px;
-  height: 60px;
-  background-color: var(--detail);
-  position: absolute;
-}
-
-.shape5 {
-  width: 160px;
-  height: 60px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-left: 180px;
-  margin-top: -70px;
-}
-
-.shape6 {
-  width: 100px;
-  height: 200px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-left: 30px;
-  margin-top: -40px;
-}
-
-.shape7 {
-  width: 350px;
-  height: 70px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-top: -150px;
-}
-
-.shape8 {
-  width: 210px;
-  height: 60px;
-  background-color: var(--detail);
-  position: absolute;
-  margin-left: -20px;
-  margin-top: -80px;
-}
- 
 /*-------------------*/
 
 @media only screen and (max-width: 500px) {
@@ -1027,12 +982,6 @@ nav a {
   margin-left: -3rem;
 }
 
-.smolbox {
-  width: 20rem;
-  height: 8rem;
-
-  margin-left: 7rem;
-}
 
 .myname {
   margin-top: -4rem;
@@ -1172,25 +1121,11 @@ nav a {
 }
 
 
-.shape3 {
-  margin-top: -90px;
-}
-
-.shape4 {
-  margin-top: -90px;
-  margin-left: 30px;
-}
-
-.shape6 {
-  height: 70px;
-}
-
-
-
 .ovid {
   width: 400px;
   margin-left: 1rem;
   margin-top: -1rem;
+  padding-top: 5rem;
 }
 
 .vidco {
@@ -1243,41 +1178,6 @@ nav a {
   transition: all 0.5s ease;
 }
 
-
- 
-.shape1 {
-  display: none;
-}
-
-.shape2 {
-  display: none;
-}
-
-.shape3 {
-  display: none;
-}
-
-.shape4 {
-  display: none;
-}
-
-.shape5 {
-  display: none;
-}
-
-.shape6 {
-  display: none;
-}
-
-.shape7 {
-  display: none;
-}
-
-.shape8 {
-  display: none;
-}
-
-}
 
 
 
@@ -1379,12 +1279,6 @@ nav a {
     margin-right: -2rem;
   }
   
-  .smolbox {
-    width: 20rem;
-    height: 8rem;
-  
-    margin-left: 7rem;
-  }
   
   .myname {
     margin-top: -4rem;
@@ -1497,6 +1391,7 @@ nav a {
     width: 600px;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    padding-top: 5rem;
   }
   
   .vidco {
@@ -1543,39 +1438,6 @@ nav a {
     font-size: 3.5rem;
   }
   
-  .shape1 {
-    display: none;
-  }
-
-  .shape2 {
-    display: none;
-  }
-
-  .shape3 {
-    display: none;
-  }
-
-  .shape4 {
-    display: none;
-  }
-
-  .shape5 {
-    display: none;
-  }
-
-  .shape6 {
-    display: none;
-  }
-
-  .shape7 {
-    display: none;
-  }
-
-  .shape8 {
-    display: none;
-  }
-
-
 
   .projects2:hover .BorderToptoBot2:before,
 .projects2:hover .BorderToptoBot2:after {
