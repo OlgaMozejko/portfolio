@@ -150,5 +150,5 @@ window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
 
-//
+
 

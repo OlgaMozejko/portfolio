@@ -2,87 +2,79 @@
  * All routes of the SPA
  * "path": "id of page in DOM"
  */
-const _routes = {
-    "/": "home",
-    "/about": "about",
-    "/pro_Selfly": "pro_Selfly",
-    "/pro_Space": "pro_Space",
-    "/pro_Neptun": "pro_Neptun",
-    "/pro_Freya": "pro_Freya",
-    "/pro_dumpling": "pro_dumpling",
-    "/pro_Magic": "pro_Magic",
-    "/pro_Cats": "pro_Cats",
-    "/projects": "projects",
+const routes = {
+    "#/": "home",
+    "#/about": "about",
+    "#/pro_Selfly": "pro_Selfly",
+    "#/pro_Space": "pro_Space",
+    "#/pro_Neptun": "pro_Neptun",
+    "#/pro_visitaarhus": "pro_visitaarhus",
+    "#/pro_dumpling": "pro_dumpling",
+    "#/pro_Freya": "pro_Freya",
+    "#/pro_Cats": "pro_Cats",
+    "#/projects": "projects",
 };
-const _pages = document.querySelectorAll(".page");
-const _navLinks = document.querySelectorAll("nav a");
 
 /**
- * Changing display to none for all pages
+ * Initialising the router, calling attachNavLinkEvents() and navigateTo()
  */
-function hideAllPages() {
-    for (const page of _pages) {
-        page.style.display = "none";
-    }
+function initRouter() {
+  attachNavLinkEvents();
+
+  let defaultPath = "#/";
+  if (routes[location.hash]) {
+    defaultPath = location.hash;
+  }
+  navigateTo(defaultPath);
 }
 
-/**
- * Navigating SPA to specific page by given pathnameß
- */
-function navigateTo(path) {
-    window.history.pushState({}, path, location.origin + path);
-    showPage(path)
-}
-
-/**
- * Displaying page by given path
- */
-function showPage(path) {
-    hideAllPages(); // hide all pages
-    document.querySelector(`#${_routes[path]}`).style.display = "block"; // show page by given path
-    setActiveTab(path);
-}
-
-/**
- * sets active tabbar/ menu item
- */
-function setActiveTab(pathname) {
-    for (const link of _navLinks) {
-        if (pathname === link.getAttribute("href")) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    }
-}
+initRouter();
 
 /**
  * Attaching event to nav links and preventing default anchor link event
  */
 function attachNavLinkEvents() {
-    const navLinks = document.querySelectorAll(".nav-link");
-    for (const link of navLinks) {
-        link.addEventListener("click", function (event) {
-            const path = link.getAttribute("href");
-            navigateTo(path);
-            event.preventDefault();
-        });
-    }
+  const navLinks = document.querySelectorAll(".nav-link");
+  for (const link of navLinks) {
+    link.addEventListener("click", function (event) {
+      const path = link.getAttribute("href");
+      navigateTo(path);
+      event.preventDefault();
+    });
+  }
 }
-
 
 /**
- * Initialising the router, calling attachNavLinkEvents(), popstate event and navigateTo()
+ * Navigating SPA to specific page by given pathnameß
  */
-function initRouter() {
-    attachNavLinkEvents();
-    window.addEventListener("popstate", () => showPage(location.pathname)); // change page when using back and forth in browser
-
-    let path = "/"; // default path
-    if (_routes[location.pathname]) {
-        path = location.pathname;
-    }
-    navigateTo(path);
+function navigateTo(pathname) {
+  hideAllPages();
+  const basePath = location.pathname.replace("index.html", "");
+  window.history.pushState({}, pathname, basePath + pathname);
+  document.querySelector(`#${routes[pathname]}`).style.display = "block";
+  setActiveTab(pathname);
 }
 
-initRouter();
+/**
+ * Changing display to none for all pages
+ */
+function hideAllPages() {
+  const pages = document.querySelectorAll(".page");
+  for (const page of pages) {
+    page.style.display = "none";
+  }
+}
+
+/**
+ * sets active tab bar/ menu item
+ */
+function setActiveTab(pathname) {
+  const navLinks = document.querySelectorAll("nav a");
+  for (const link of navLinks) {
+    if (pathname === link.getAttribute("href")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  }
+}
