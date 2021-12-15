@@ -13,6 +13,7 @@ const routes = {
     "#/pro_Freya": "pro_Freya",
     "#/pro_Cats": "pro_Cats",
     "#/projects": "projects",
+    "#/pro_DenGuleCafe": "pro_DenGuleCafe",
 };
 
 /**
